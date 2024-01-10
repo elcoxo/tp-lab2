@@ -1,0 +1,27 @@
+{% extends 'shop/header.html' %}
+
+{% block content %}
+<div class="shoppingCart">
+    <h2>My Cart</h2>
+
+    <div class="itemContainer">
+
+        {% for item in products %}
+        <div class="item">
+            <div class="iteminfo">
+                <p>{{item.product.name}}</p>
+            </div>  
+            <div class="name"><p>{{item.quantity}}</p></div>
+            <div class="name"><p>${{item.product.price}}</p></div>
+            <div class="name"><p>${{item.price}}</p></div>
+            <button value="{{ item.id }}" style="color:red; text-decoration:none" class="btnTest">
+                delete
+                <i class="fa-solid fa-close"></i>
+            </button>
+        </div>
+    
+        {% endfor %}
+      </div>
+
+</div>
+{% endblock content %}

@@ -30,6 +30,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = []
 
+CSRF_COOKIE_SECURE = False
+CSRF_COOKIE_HTTPONLY = False
 
 # Application definition
 
@@ -83,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'django_db',
         'USER' : 'postgres',
-        'PASSWORD' : os.environ['DATABASE_PASSWORD'] if 'DATABASE_PASSWORD' in os.environ else '',
+        'PASSWORD' : os.environ['DATABASE_PASSWORD'] if 'DATABASE_PASSWORD' in os.environ else '12345',
         'HOST' : 'localhost',
         'PORT' : '5432',
     }
@@ -138,3 +140,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = os.path.join(BASE_DIR, STATIC_URL)
 django_heroku.settings(locals())
+
+

@@ -1,0 +1,118 @@
+nav{
+    background-color: #5075dc;
+    color: white;
+    width: 100%;
+    height: 80px;
+    padding: 0px 10px 0px 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cart{
+    width: 300px;
+    height: auto;
+    /* border: 2px solid white; */
+    /* padding: 10px 10px 10px 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-container{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cart-container .cartitems{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-container .cartitems p{
+    color: white;
+    font-size: 20px;
+}
+
+.cart-container i{
+    font-size: 20px;
+}
+
+.productContainer{
+    background-color: #f2f2f2;
+    width: 200px;
+    /* height: auto; */
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #dcdcdc;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: auto;
+
+}
+
+
+
+.shoppingCart{
+    width: 700px;
+    height: 500px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.shoppingCart p{
+    font-size: 20px;
+}
+
+
+
+.shoppingCart .heading{
+    width: 100%;
+    height: 50px;
+    /* border: 1px soild blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #6050DC;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+.shoppingCart .name, .p_name{
+    /* border: 2px solid green; */
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shoppingCart .p_name{
+    width: 350px;
+}
+
+.shoppingCart .itemContainer{
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+}
